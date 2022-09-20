@@ -4,12 +4,13 @@
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
-	char text; 
-	int i;
+	int num_1, num_2;
 	
-	printf("input a number : ");
-	scanf("%c", &text);
+	printf("input a numerator : ");
+	scanf("%d", &num_1);
 	
-	i = text - '0';
-	printf("The input number is %i\n", i);
+	printf("input a denominator : ");
+	scanf("%d", &num_2);
+	
+	printf("나누기의 결과는 %f입니다.", (float)num_1 / num_2);
 }
